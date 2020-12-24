@@ -18,7 +18,8 @@ def train(data_conf, model_conf, **kwargs):
     hyperparams = model_conf["hyperParameters"]
 
     # load data & engineer
-    walmart_df = pd.read_csv(data_conf['data_set_1'])
+    # walmart_df = pd.read_csv(data_conf['data_set_1'])
+    walmart_df=pd.read_csv('https://github.com/usmansyed90/AoaDemoModelsTemp/tree/master/model_definitions/70a7ee68-2884-48ff-829d-47a43ac07d43/model_modules/dataset/merged_walmart.csv')
     print(walmart_df.head())
     # features = 'sepallength,sepalwidth,petallength,petalwidth'.split(',')
     # X = iris_df.loc[:, features]
